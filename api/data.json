@@ -1,62 +1,253 @@
-[
-  {
-    "name": "Action Scene",
-    "Prompt": "Place the person in the photo in a cinematic action scene",
-    "thumbnail": "https://i.imgur.com/HKNC4Xx.jpeg",
-    "numberOfImages": 1
-  },
-  {
-    "name": "Superheros",
-    "Prompt": "Transform the people in the picture into superheroes with capes and costumes.",
-    "thumbnail": "https://i.imgur.com/Y7LuJJj.jpeg",
-    "numberOfImages": 2
-  },
-  {
-    "name": "Vintage",
-    "Prompt": "Convert the image to have a vintage sepia tone filter from the 1920s era.",
-    "thumbnail": "https://i.imgur.com/cmpRKk4.jpeg",
-    "numberOfImages": 2
-  },
-  {
-    "name": "Fantasy World",
-    "Prompt": "Place the people from the picture in a magical fantasy world with dragons and castles.",
-    "thumbnail": "https://i.imgur.com/ixzHH7l.jpeg",
-    "numberOfImages": 2
-  },
-  {
-    "name": "Cartoon",
-    "Prompt": "Transform the people in the picture into animated cartoon characters.",
-    "thumbnail": "https://i.imgur.com/DtyLEnm.jpeg",
-    "numberOfImages": 2
-  },
-  {
-    "name": "Professional",
-    "Prompt": "Make the people in the picture look like business professionals in a corporate setting.",
-    "thumbnail": "https://i.imgur.com/udAsgUt.jpeg",
-    "numberOfImages": 2
-  },
-  {
-    "name": "Beach Vacation",
-    "Prompt": "Place the people from the picture on a tropical beach with palm trees and ocean waves.",
-    "thumbnail": "https://i.imgur.com/WFYNODS.jpeg",
-    "numberOfImages": 2
-  },
-  {
-    "name": "Winter Wonderland",
-    "Prompt": "Place the people from the picture in a snowy winter landscape with falling snowflakes.",
-    "thumbnail": "https://i.imgur.com/yGMK966.jpeg",
-    "numberOfImages": 2
-  },
-  {
-    "name": "Cyberpunk",
-    "Prompt": "Transform the people and setting into a futuristic cyberpunk world with neon lights.",
-    "thumbnail": "https://i.imgur.com/anraWVX.jpeg",
-    "numberOfImages": 2
-  },
-  {
-    "name": "Pet Addition",
-    "Prompt": "Add cute pets like dogs or cats next to the people in the picture.",
-    "thumbnail": "https://i.imgur.com/ncEEKEG.jpeg",
-    "numberOfImages": 2
+{
+  "categories": [
+    {
+      "name": "Basic Styles",
+      "templates": [
+        {
+          "name": "No Style",
+          "prompt": "",
+          "thumbnail": "https://i.imgur.com/sparkles.jpeg",
+          "isDefault": true,
+          "isPro": false
+        },
+        {
+          "name": "Realistic",
+          "prompt": "Create a photorealistic version",
+          "thumbnail": "https://i.imgur.com/realistic.jpeg",
+          "isPro": true,
+          "examples": [
+            "https://i.imgur.com/ex1.jpeg",
+            "https://i.imgur.com/ex2.jpeg"
+          ]
+        },
+        {
+          "name": "Anime",
+          "prompt": "Convert to anime style art",
+          "thumbnail": "https://i.imgur.com/anime.jpeg",
+          "isPro": true,
+          "examples": [
+            "https://i.imgur.com/animeEx1.jpeg",
+            "https://i.imgur.com/animeEx2.jpeg"
+          ]
+        },
+        {
+          "name": "Cartoon",
+          "prompt": "Transform into a cartoon style animation",
+          "thumbnail": "https://i.imgur.com/cartoon.jpeg",
+          "isPro": true,
+          "examples": [
+            "https://i.imgur.com/cartoonEx1.jpeg",
+            "https://i.imgur.com/cartoonEx2.jpeg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Art Styles",
+      "templates": [
+        {
+          "name": "Oil Painting",
+          "prompt": "Convert to oil painting style artwork",
+          "thumbnail": "https://i.imgur.com/oil.jpeg",
+          "isPro": true,
+          "examples": ["https://i.imgur.com/oilEx1.jpeg"]
+        },
+        {
+          "name": "Watercolor",
+          "prompt": "Transform into watercolor painting style",
+          "thumbnail": "https://i.imgur.com/water.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Pencil Sketch",
+          "prompt": "Convert to detailed pencil sketch",
+          "thumbnail": "https://i.imgur.com/sketch.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Pop Art",
+          "prompt": "Transform into pop art style",
+          "thumbnail": "https://i.imgur.com/popart.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Impressionist",
+          "prompt": "Convert to impressionist painting style",
+          "thumbnail": "https://i.imgur.com/impression.jpeg",
+          "isPro": true
+        }
+      ]
+    },
+    {
+      "name": "Movie Styles",
+      "templates": [
+        {
+          "name": "Hollywood",
+          "prompt": "Create a cinematic Hollywood movie scene",
+          "thumbnail": "https://i.imgur.com/hollywood.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Film Noir",
+          "prompt": "Convert to black and white film noir style",
+          "thumbnail": "https://i.imgur.com/noir.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Action Scene",
+          "prompt": "Place in a cinematic action scene",
+          "thumbnail": "https://i.imgur.com/HKNC4Xx.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Horror",
+          "prompt": "Transform into horror movie style",
+          "thumbnail": "https://i.imgur.com/horror.jpeg",
+          "isPro": true
+        }
+      ]
+    },
+    {
+      "name": "Fantasy & Sci-Fi",
+      "templates": [
+        {
+          "name": "Cyberpunk",
+          "prompt": "Transform into cyberpunk style with neon lights",
+          "thumbnail": "https://i.imgur.com/anraWVX.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Fantasy World",
+          "prompt": "Place in a magical fantasy world",
+          "thumbnail": "https://i.imgur.com/ixzHH7l.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Steampunk",
+          "prompt": "Convert to steampunk style with mechanical elements",
+          "thumbnail": "https://i.imgur.com/steampunk.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Space Opera",
+          "prompt": "Place in a futuristic space setting",
+          "thumbnail": "https://i.imgur.com/space.jpeg",
+          "isPro": true
+        }
+      ]
+    },
+    {
+      "name": "Time Periods",
+      "templates": [
+        {
+          "name": "Vintage",
+          "prompt": "Apply vintage sepia tone from 1920s",
+          "thumbnail": "https://i.imgur.com/cmpRKk4.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Medieval",
+          "prompt": "Transform to medieval time period",
+          "thumbnail": "https://i.imgur.com/medieval.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Renaissance",
+          "prompt": "Convert to Renaissance painting style",
+          "thumbnail": "https://i.imgur.com/renaissance.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "80s Retro",
+          "prompt": "Apply 1980s retro style",
+          "thumbnail": "https://i.imgur.com/retro.jpeg",
+          "isPro": true
+        }
+      ]
+    },
+    {
+      "name": "Environments",
+      "templates": [
+        {
+          "name": "Beach Vacation",
+          "prompt": "Place on a tropical beach",
+          "thumbnail": "https://i.imgur.com/WFYNODS.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Winter Wonderland",
+          "prompt": "Place in a snowy winter landscape",
+          "thumbnail": "https://i.imgur.com/yGMK966.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Urban City",
+          "prompt": "Place in modern city environment",
+          "thumbnail": "https://i.imgur.com/city.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Underwater",
+          "prompt": "Place in underwater scene",
+          "thumbnail": "https://i.imgur.com/underwater.jpeg",
+          "isPro": true
+        }
+      ]
+    },
+    {
+      "name": "Character Types",
+      "templates": [
+        {
+          "name": "Superhero",
+          "prompt": "Transform into superhero with cape and costume",
+          "thumbnail": "https://i.imgur.com/Y7LuJJj.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Professional",
+          "prompt": "Make look like business professional",
+          "thumbnail": "https://i.imgur.com/udAsgUt.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Fantasy Character",
+          "prompt": "Transform into fantasy character",
+          "thumbnail": "https://i.imgur.com/fantasy.jpeg",
+          "isPro": true
+        },
+        {
+          "name": "Warrior",
+          "prompt": "Transform into ancient warrior",
+          "thumbnail": "https://i.imgur.com/warrior.jpeg",
+          "isPro": true
+        }
+      ]
+    }
+  ],
+  "trending": [
+    {
+      "name": "AI Reporter",
+      "prompt": "Transform into a professional news reporter in a studio setting",
+      "thumbnail": "https://i.imgur.com/reporter.jpeg",
+      "isPro": true
+    },
+    {
+      "name": "Viral Dance",
+      "prompt": "Place in a viral dance video setting with effects",
+      "thumbnail": "https://i.imgur.com/dance.jpeg",
+      "isPro": true
+    },
+    {
+      "name": "Pet Influencer",
+      "prompt": "Add cute pets and social media elements",
+      "thumbnail": "https://i.imgur.com/pet.jpeg",
+      "isPro": true
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2024-03-21",
+    "defaultDuration": 10,
+    "defaultAspectRatio": "9:16"
   }
-]
+}
