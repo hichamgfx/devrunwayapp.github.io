@@ -50,7 +50,9 @@
           "prompt": "Convert to oil painting style artwork",
           "thumbnail": "https://i.imgur.com/oil.jpeg",
           "isPro": true,
-          "examples": ["https://i.imgur.com/oilEx1.jpeg"]
+          "examples": [
+            "https://i.imgur.com/oilEx1.jpeg"
+          ]
         },
         {
           "name": "Watercolor",
